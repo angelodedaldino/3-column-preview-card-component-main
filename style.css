@@ -1,0 +1,116 @@
+.columns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:1rem;
+}
+
+.column1{
+    padding:4.5rem 3.5rem;
+    color: white;
+    background-color:#E28525;
+    border: 1px solid black;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    max-width: 25ch;
+}
+
+.column2{
+    color: white;
+    background-color: #016972;
+    padding:4.5rem 3.5rem;
+    border: 1px solid black;
+    max-width: 25ch;
+}
+
+.column3{
+    color: white;
+    background-color: #00403F;
+    padding:4.5rem  3.5rem;
+    border: 1px solid black;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    max-width: 25ch;
+}
+
+.btn-learn-more{
+    position: relative;
+    top:35px;
+    text-decoration: none;
+    padding:0.75rem 1.5rem;
+    background-color: white;
+    border-radius: 50px;
+}
+.btn-learn-more:focus{
+    background-color: transparent;
+    color: white !important ;
+    border:2px solid white;
+}
+#btn-sedans-color{
+    color:#E28525 ;
+}
+#btn-suvs-color{
+    color:#016972 ;
+}
+#btn-luxury-color{
+    color: #00403F ;
+}/*
+@media(max-width:375px){
+    .columns{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding:4.5rem;
+        width: 100;
+    }
+    .column1{
+        padding:4.5rem 3.5rem;
+        color: white;
+        background-color:#E28525;
+        border: 1px solid black;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        max-width: 25ch;
+    }
+    
+    .column2{
+        color: white;
+        background-color: #016972;
+        padding:4.5rem 3.5rem;
+        border: 1px solid black;
+        max-width: 25ch;
+    }
+    
+    .column3{
+        color: white;
+        background-color: #00403F;
+        padding:4.5rem  3.5rem;
+        border: 1px solid black;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        max-width: 25ch;
+    }
+    .btn-learn-more{
+        position: relative;
+        top:35px;
+        text-decoration: none;
+        padding:0.75rem 1.5rem;
+        background-color: white;
+        border-radius: 50px;
+    }
+    .btn-learn-more:focus{
+        background-color: transparent;
+        color: white !important ;
+        border:2px solid white;
+    }
+    #btn-sedans-color{
+        color:#E28525 ;
+    }
+    #btn-suvs-color{
+        color:#016972 ;
+    }
+    #btn-luxury-color{
+        color: #00403F ;
+    }
+}/*
