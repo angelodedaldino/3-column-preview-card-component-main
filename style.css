@@ -12,8 +12,7 @@
 }
 
 .box {
-    padding: 1.7rem;
-    border: 1px solid #000;
+    padding: 3rem;
     color: #fff;
 }
 
@@ -67,6 +66,7 @@
     border: 1px solid white;
     color: #fff;
 }
+
 @media screen and (max-width: 375px) {
     .cards {
         display: flex;
