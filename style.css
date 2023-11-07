@@ -54,12 +54,19 @@
 
 .btn-learn-more {
     text-decoration: none;
-    padding: 0.6rem 1.3rem;
+    padding: 0.65rem 1.4rem;
     background-color: #fff;
     border-radius: 20px;
-    font-size: 0.8rem;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.75rem;
+    text-transform: capitalize;
 }
 
+.btn-learn-more:active{
+    background-color: transparent;
+    border: 1px solid white;
+    color: #fff;
+}
 @media screen and (max-width: 375px) {
     .cards {
         display: flex;
