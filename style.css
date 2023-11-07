@@ -1,116 +1,62 @@
-.columns{
+@import url("https://fonts.google.com/specimen/Lexend+Deca");
+@import url("https://fonts.google.com/specimen/Big+Shoulders+Display");
+
+* {
+    font-size: 15px;
+}
+
+.cards {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding:1rem;
 }
 
-.column1{
-    padding:4.5rem 3.5rem;
-    color: white;
-    background-color:#E28525;
-    border: 1px solid black;
+.box {
+    padding: 1.7rem;
+    border: 1px solid #000;
+}
+
+.box:first-of-type {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    max-width: 25ch;
 }
 
-.column2{
-    color: white;
-    background-color: #016972;
-    padding:4.5rem 3.5rem;
-    border: 1px solid black;
-    max-width: 25ch;
-}
-
-.column3{
-    color: white;
-    background-color: #00403F;
-    padding:4.5rem  3.5rem;
-    border: 1px solid black;
+.box:last-of-type {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    max-width: 25ch;
 }
 
-.btn-learn-more{
-    position: relative;
-    top:35px;
+.box p {
+    line-height: 1.5;
+    max-width: 25ch;
+    text-align: left;
+}
+
+.btn-learn-more {
     text-decoration: none;
-    padding:0.75rem 1.5rem;
-    background-color: white;
-    border-radius: 50px;
+    padding: 0.9rem;
+    background-color: #000;
+    color: #fff;
+    border-radius: 20px;
 }
-.btn-learn-more:focus{
-    background-color: transparent;
-    color: white !important ;
-    border:2px solid white;
-}
-#btn-sedans-color{
-    color:#E28525 ;
-}
-#btn-suvs-color{
-    color:#016972 ;
-}
-#btn-luxury-color{
-    color: #00403F ;
-}
-@media(max-width:375px){
-    .columns{
+
+@media screen and (max-width: 770px) {
+    .cards {
         display: flex;
+        flex-flow: column wrap;
         justify-content: center;
-        flex-direction: column;
         align-items: center;
-        padding:4.5rem;
-        width: 100;
     }
-    .column1{
-        padding:4.5rem 3.5rem;
-        color: white;
-        background-color:#E28525;
-        border: 1px solid black;
-        border-top-left-radius: 10px;
+
+    .box:first-of-type {
         border-top-right-radius: 10px;
-        max-width: 25ch;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: unset;
     }
-    
-    .column2{
-        color: white;
-        background-color: #016972;
-        padding:4.5rem 3.5rem;
-        border: 1px solid black;
-        max-width: 25ch;
-    }
-    
-    .column3{
-        color: white;
-        background-color: #00403F;
-        padding:4.5rem  3.5rem;
-        border: 1px solid black;
-        border-bottom-left-radius: 10px;
+
+    .box:last-of-type {
         border-bottom-right-radius: 10px;
-        max-width: 25ch;
-    }
-    .btn-learn-more{
-        position: relative;
-        top:35px;
-        text-decoration: none;
-        padding:0.75rem 1.5rem;
-        background-color: white;
-        border-radius: 50px;
-    }
-    .btn-learn-more:focus{
-        background-color: transparent;
-        color: white !important ;
-        border:2px solid white;
-    }
-    #btn-sedans-color{
-        color:#E28525 ;
-    }
-    #btn-suvs-color{
-        color:#016972 ;
-    }
-    #btn-luxury-color{
-        color: #00403F ;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: unset;
     }
 }
